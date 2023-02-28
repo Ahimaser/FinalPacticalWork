@@ -1,6 +1,7 @@
 ﻿using System;
 using static System.Console;
 using static CreateArray;
+using static SelectonArr;
 
 namespace FinalPacticalWork
 {
@@ -11,8 +12,13 @@ namespace FinalPacticalWork
             WriteLine("Задайте длину массива : ");
             int x = Convert.ToInt32(ReadLine());
 
-            WriteLine(Print(Create(x)));
+            string[] arr = Create(x);
+            WriteLine(Print(arr));
 
+            arr = Change(arr);
+            WriteLine("Измененный " + Print(arr));
+            arr = Select(arr);
+            WriteLine("Измененный " + Print(arr));
         }
     }
 
