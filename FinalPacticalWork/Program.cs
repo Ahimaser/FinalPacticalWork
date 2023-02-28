@@ -15,9 +15,8 @@ namespace FinalPacticalWork
             string[] arr = Create(x);
             WriteLine(Print(arr));
 
-            arr = Change(arr);
-            WriteLine("Измененный " + Print(arr));
-            arr = Select(arr);
+            
+            arr = Select(Change(arr));
             WriteLine("Измененный " + Print(arr));
         }
     }

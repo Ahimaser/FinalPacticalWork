@@ -17,7 +17,7 @@ public static class SelectonArr
             {
                 arrselect[i] = arr[i];
             }
-            else arrselect[i] = "0";
+            ;
         }
         return arrselect;
     }
@@ -29,7 +29,7 @@ public static class SelectonArr
     /// <returns></returns>
     public static string[] Select(string[] arr)
     {
-        string[] newarr = arr.Where(s => s != "0").ToArray();
+        string[] newarr = arr.Where(s => s != null).ToArray();
 
         return newarr;
     }
